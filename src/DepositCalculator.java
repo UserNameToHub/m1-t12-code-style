@@ -6,8 +6,8 @@ public class DepositCalculator {
         return getRandom(pay, 2);
     }
 
-    double calculateSimplePercentFunction(double doubleAmount, double doubleYearRate, int depositPeriod) {
-        return getRandom(doubleAmount + doubleAmount * doubleYearRate * depositPeriod, 2);
+    double calculateSimplePercentFunction(double amount, double yearRate, int depositPeriod) {
+        return getRandom(amount + amount * yearRate * depositPeriod, 2);
     }
 
     double getRandom(double value, int places) {
