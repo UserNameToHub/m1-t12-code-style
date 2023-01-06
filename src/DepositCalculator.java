@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class DepositCalculator {
-    double calculateComplexPercentFunction(double a, double y, int d) {
-        double pay = a * Math.pow((1 + y / 12), 12 * d);
+    double calculateComplexPercentFunction(double amount, double yearRate, int depositPeriod) {
+        double pay = amount * Math.pow((1 + yearRate / 12), 12 * depositPeriod);
         return getRandom(pay, 2);
     }
 
